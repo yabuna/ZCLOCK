@@ -38,7 +38,11 @@ The app will start on `https://127.0.0.1:5000/`.
 4. Credentials and device details are logged and sent to **Telegram** for analysis.
 
 ## 🖼️ Screenshots
-![Physhing Login Page](IMAGES/loginpagetest.jpg)
+![Setup Page](IMAGES/login.jpg)
+![Login Page](IMAGES/loginpagetest.jpg)
+![Password Page](IMAGES/dashboardtest.jpg)
+![Error Page](IMAGES/errorpagetest.jpg)
+![Output Page](IMAGES/outputTest.jpg)
 
 
 ![Captured Credentials Output ](IMAGES/outputTest.jpg)
