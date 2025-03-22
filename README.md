@@ -49,7 +49,7 @@ This tool is meant for **academic use only** and should not be used for illegal 
 
 ## 👨‍💻 Author
 - **Y4BN**
-- **[Your GitHub Profile](https://github.com/yabuna)**
+- **[GitHub Profile](https://github.com/yabuna)**
 
 ## 📜 License
 This project is licensed under the **MIT License**. Unauthorized use is strictly prohibited.
