@@ -38,8 +38,8 @@ The app will start on `https://127.0.0.1:5000/`.
 4. Credentials and device details are logged and sent to **Telegram** for analysis.
 
 ## 🖼️ Screenshots
-![Login Page](https://via.placeholder.com/600x300?text=Login+Page)
-![Captured Credentials](https://via.placeholder.com/600x300?text=Captured+Data)
+![Login Page](IMAGES/login_page_test.jpg)
+![Captured Credentials](IMAGES/output.jpg)
 
 ## 🛑 Ethical Considerations
 This tool is meant for **academic use only** and should not be used for illegal activities. Ensure you have **explicit authorization** before deploying.
