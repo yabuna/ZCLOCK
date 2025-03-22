@@ -44,9 +44,6 @@ The app will start on `https://127.0.0.1:5000/`.
 ![Error Page](IMAGES/errorpagetest.jpg)
 ![Output Page](IMAGES/outputTest.jpg)
 
-
-![Captured Credentials Output ](IMAGES/outputTest.jpg)
-
 ## 🛑 Ethical Considerations
 This tool is meant for **academic use only** and should not be used for illegal activities. Ensure you have **explicit authorization** before deploying.
 
