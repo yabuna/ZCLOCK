@@ -45,7 +45,7 @@ The app will start on `https://127.0.0.1:5000/`.
 This tool is meant for **academic use only** and should not be used for illegal activities. Ensure you have **explicit authorization** before deploying.
 
 ## 👨‍💻 Author
-- **Your Name**
+- **Y4BN**
 - **[Your GitHub Profile](https://github.com/yabuna)**
 
 ## 📜 License
